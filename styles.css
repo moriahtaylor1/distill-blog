@@ -1,0 +1,11 @@
+/* Import fonts from Google's API */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+.distill-site-nav {
+    color: #000000;
+    background-color: #cccccc;
+    font-size: 20px;
+    font-family: 'Signika Negative';
+    font-weight: 600;
+}
