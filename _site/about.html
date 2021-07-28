@@ -2045,47 +2045,56 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_site_in_header-->
   <style type="text/css">
   /* Import fonts from Google's API */
-  @import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
-  @import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Inconsolata');
 
-  /* nav bar */
-  .distill-site-nav {
+/* nav bar */
+.distill-site-nav {
     color: #afa4bc;
     background-color: #381c57;
     font-size: 20px;
-    font-family: 'Signika Negative', sans-serif;
-  }
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 600;
+}
 
-  /* headers */
-  h1, h2, h3, h4, h5 {
-      font-family: 'Signika Negative', sans-serif;
-  }
+/* headers */
+h1, h2, h3, h4, h5 {
+    font-family: 'Inconsolata', sans-serif;
+}
 
-  d-title {
-      color: #d18bfb;
-  }
+d-title {
+    color: black;
+    font-family: 'Inconsolata', sans-serif;
+}
 
-  d-byline {
-      font-family: 'Signika Negative', sans-serif;
-      color: #cccccc;
-  }
+d-byline {
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
 
-  d-article {
-      font-family: 'Lato', sans-serif;
-      color: #cccccc;
-  }
+d-article {
+    font-family: 'Lato', sans-serif;
+}
 
-  /* background color for pages */
-  body {
+h1 {
+    color: black
+}
+
+h2, h3, h4, h5 {
+    color: #381c57
+}
+
+/* background color for pages */
+body {
     background-color: #ebe8ee;
-  }
+}
 
-  /* font for body of text */
-  html, body, p {
-      font-family: 'Lato', sans-serif;
-      line-height: 1.3;
-      color: #cccccc;
-  }
+/* font for body of text */
+html, body, p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+    color: black;
+}
 
   </style>
   <!--/radix_placeholder_site_in_header-->
@@ -2111,8 +2120,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="index.html">&#60;home&#62;</a>
+<a href="about.html">&#60;about&#62;</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>

@@ -2055,28 +2055,39 @@ document.addEventListener('DOMContentLoaded', function() {
 <style type="text/css">
 /* Import fonts from Google's API */
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Inconsolata');
 
 /* nav bar */
 .distill-site-nav {
     color: #afa4bc;
     background-color: #381c57;
-    font-size: 20px;
-    font-family: 'Signika Negative', sans-serif;
-    font-weight: 600;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
+}
+
+.nav-left {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav-right {
+    font-size: 22px;
+    font-weight: 400;
 }
 
 /* headers */
 h1, h2, h3, h4, h5 {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 d-title {
     color: black;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 600;
 }
 
 d-byline {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: black;
 }
 
@@ -2104,6 +2115,8 @@ html, body, p {
     color: black;
 }
 
+
+
 </style>
 <!--/radix_placeholder_site_in_header-->
 
@@ -2127,8 +2140,8 @@ html, body, p {
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="../../index.html">Home</a>
-<a href="../../about.html">About</a>
+<a href="../../index.html">&lt;home&gt;</a>
+<a href="../../about.html">&lt;about&gt;</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
