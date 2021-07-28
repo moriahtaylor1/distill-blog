@@ -1,0 +1,29 @@
+---
+title: "Welcome to Moriah's Thinking Chair"
+description: |
+  Welcome to my new blog, Moriah's Thinking Chair. I hope you enjoy this new form of content from me.
+author:
+  - name: Moriah Taylor 
+    url: https://twitter.com/moriah_taylor58
+date: 07-28-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+Hi all! My name is Moriah Taylor and I am an analyst by trade and a data lover at heart. I am a content creator on [Twitter](https://twitter.com/moriah_taylor58) and [Twitch](https://www.twitch.tv/moriah_streamr). Most of my content focuses on:  
+&nbsp;&nbsp;&nbsp;&nbsp;● Data Wrangling  
+&nbsp;&nbsp;&nbsp;&nbsp;● Data Visualization  
+&nbsp;&nbsp;&nbsp;&nbsp;● Data Analysis  
+&nbsp;&nbsp;&nbsp;&nbsp;● Best practices for all of the above  
+
+The goal of this blog is to complement the content that I already produce, as well as provide a space for longer-form content on topics that can't be covered in a series of tweets. I am very excited about this project and hope you all enjoy it!

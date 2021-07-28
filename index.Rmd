@@ -1,0 +1,5 @@
+---
+title: "Moriah's Thinking Chair"
+site: distill::distill_website
+listing: posts
+---
