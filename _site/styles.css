@@ -6,9 +6,18 @@
 .distill-site-nav {
     color: #afa4bc;
     background-color: #381c57;
-    font-size: 20px;
     font-family: 'Inconsolata', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.nav-left {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav-right {
+    font-size: 22px;
+    font-weight: 400;
 }
 
 /* headers */
@@ -19,6 +28,7 @@ h1, h2, h3, h4, h5 {
 d-title {
     color: black;
     font-family: 'Inconsolata', sans-serif;
+    font-weight: 600;
 }
 
 d-byline {
@@ -49,3 +59,5 @@ html, body, p {
     line-height: 1.3;
     color: black;
 }
+
+
