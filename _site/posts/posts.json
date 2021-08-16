@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-08-14-color-accessibility-5-tips-for-choosing-accessible-colors/",
+    "title": "Color & Accessibility",
+    "description": "5 Tips for Choosing Accessible Colors",
+    "author": [
+      {
+        "name": "Moriah Taylor",
+        "url": "https://twitter.com/moriah_taylor58"
+      }
+    ],
+    "date": "2021-08-14",
+    "categories": [],
+    "contents": "\r\nIntroduction\r\nWhen choosing colors for a color visualization, it is important to be mindful of those with color vision deficiencies. Color vision deficiency is the inability to distinguish certain shades of color; the term “color blindness” is also used to describe this condition, but very few people are completely colorblind (American Optometric Association).\r\nColor deficiency is the result of malfunctioning or missing cones in the eyes - cones being the part of the eye that perceives color. Without getting too technical, our eyes have three cones - red, green, and blue. The most common type of deficiencies make it hard to differentiate between red and green.\r\nThere are four main types of red-green color deficiencies, listed below with their corresponding prevalence sourced from We are Colorblind:\r\n● Deuteranomaly (4.63%) - malfunctioning green cone\r\n● Deuteranopia (1.27%) - missing green cone\r\n● Protanomaly (1.08%) - malfunctioning red cone\r\n● Protanopia (1.01%) - missing red cone\r\nThere are also two types of blue color deficiency, but they are very rare:\r\n● Tritanopia (0.03%) - missing blue cone\r\n● Tritanomaly (0.02%) - malfunctioning blue cone\r\nThere are many tools that you can use to simulate these color deficiencies on your color palettes. My personal favorite is Viz Palette by Elijah Meeks & Susie Lu. But there are others out there such as COBLIS and Color Oracle.\r\nBesides checking your palette under a simulator (which you should always do), here are some other ways that you can improve the accessibility of your color palettes:\r\n1. Have Lightness Contrast\r\nHaving lightness contrast is one of the best ways to improve the perception of a color palette.\r\n\r\n2. If using green, make it a bit yellow or a bit blue\r\nBy adjusting the hue of a green color, you can make it more perceivable to those who have color deficiencies.\r\n\r\n3. Avoid using too many shades of purple and blue together\r\nPurple is my favorite color so I often want to use it in my visualizations and what I’ve learned from using colorblindness simulators is that it is often perceived as a shade of blue, so just use caution when using these two colors together. Again, lightness contrast is a way to resolve this issue.\r\n\r\n4. Don’t use red and green together\r\nThis may seem like an obvious tip for anyone remotely familiar with color deficiencies, but it can be a natural instinct to use these colors in a divergent palette to represent positive or negative values. Instead, try to use orange and blue and/or denote the increases with +/- symbols.\r\n\r\n5. Use border or white space between colored areas\r\nBy utilizing borders or white space, you can preserve contrast between colors/areas of your visualization.\r\n\r\nConclusion\r\nChecking that your visualization is perceivable by those with color deficiencies is only ONE WAY to increase accessibility. There are a lot of other ways in which individuals may have trouble accessing your design. I will delve more into this in another blog post that covers accessibility more generally.\r\nResources\r\n● “119 | Color with Karen Schloss” Data Stories Podcast https://datastori.es/119-color-with-karen-schloss/\r\n● “Color Theory - DVS Fireside Chat #1” Data Visualization Society YouTube channel: https://www.youtube.com/watch?v=ihy3ENb89EU&ab_channel=DataVisualizationSociety\r\n● “How to pick more beautiful colors for your data visualizations” Lisa Charlotte Rost - Datawrapper https://blog.datawrapper.de/beautifulcolors/\r\n● “How to use color in your data visualization” storytelling with data YouTube channel: https://www.youtube.com/watch?v=AiD6etOB6qI&ab_channel=storytellingwithdata\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-16T09:31:16-04:00",
+    "input_file": "color-accessibility.utf8.md"
+  },
+  {
     "path": "posts/2021-07-28-introduction-to-color-and-color-harmony/",
     "title": "Introduction to Color",
     "description": "A brief introduction to color and color harmony.",
