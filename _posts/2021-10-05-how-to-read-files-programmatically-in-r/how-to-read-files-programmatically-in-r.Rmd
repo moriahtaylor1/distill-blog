@@ -1,0 +1,66 @@
+---
+title: "How to Read Files Programmatically in R"
+description: |
+  Learn how to read files using the assign() function.
+author:
+  - name: Moriah Taylor
+    url: https://twitter.com/moriah_taylor58
+date: 10-05-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introduction  
+I've recently been working on a project at work for which I have to combine multiple datasets from multiple years. The process of reading 80 files in line-by-line would be incredibly impractical. While looking for a solution, I found out about the **assign()** function, which allows you to assign a name to an object and save it to your environment. I found this so helpful that I wanted to share it with all of you.
+
+## Step 1: Create names for your dataframes  
+The first thing you want to do is create a list of names that you're going to use for your dataframes. It's easiest to do this based on a sequence of numbers, whether you start at 1 or want to label your dataframes by year.
+
+```{r step1, include=TRUE, echo=TRUE}
+numbers <- seq(1,5,1) #creates list of numbers from 1 to 5
+dataframe_names <- c() #initialize empty list
+#create loop to generate names
+for (i in 1:length(numbers)){
+  n <- numbers[i] #get number from numbers list
+  dataframe_names[i] <- paste0("df", n) #add generated name to dataframe names list
+}
+print(dataframe_names)
+```
+
+
+## Step 2: List your file paths  
+The next step is to compile a list of paths to all the files you want to read in. This is easiest to do if all the files are named similarly, so it may be in your best interest to rename all files to match a certain pattern.
+
+```{r step2, include=TRUE, echo=TRUE}
+file_paths <- c() #initialize empty list
+#create loop to generate paths
+for (i in 1:length(numbers)){
+  n <- numbers[i] #get number from numbers list
+  file_paths[i] <- paste0("file", n, ".txt") #add file path to list
+}
+print(file_paths)
+```
+
+## Step 3: Load files
+Now for the last step - loading in your files. The key to doing this programmatically is the **assign()** function, which will allow you to assign your names to your files in order to store them as objects in your environment.
+
+```{r step3, include=TRUE, echo=TRUE}
+file_count <- 1 #keep track of file path index
+#loop through names
+for (n in dataframe_names){
+  filepath <- file_paths[file_count]  #get file path at position equal to file_count
+  #read in comma-delimited text file and assign it to name "n"
+  assign(n, read.delim(filepath, header = TRUE, sep = ",", dec = ".")) 
+  file_count <- file_count + 1  #increase file_count by one to go to next file
+}
+```
+
+
+# Conclusion
+I hope this blog post served as a helpful tool for you to learn how to programmatically read files into R. For more R tips and tricks, you can follow me on [Twitter](https://www.twitter.com/moriah_taylor58) and to watch me program live, you can follow me on [Twitch](https://www.twitch.tv/moriah_streamR).
